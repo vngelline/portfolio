@@ -8,27 +8,27 @@ images.forEach(function (image) {
 
 const logoParty = function () {
     const interval = setInterval(function() {
-        setTimeout(() => {
-            pics[4].style.display = "none";
-            pics[0].style.display = "block";
-          }, 400);
           setTimeout(() => {
             pics[0].style.display = "none";
             pics[1].style.display = "block";
-          }, 900);
+          }, 500);
           setTimeout(() => {
             pics[1].style.display = "none";
             pics[2].style.display = "block";
-          }, 1300);
+          }, 1000);
           setTimeout(() => {
             pics[2].style.display = "none";
             pics[3].style.display = "block";
-          }, 1700);
+          }, 1500);
           setTimeout(() => {
             pics[3].style.display = "none";
             pics[4].style.display = "block";
-          }, 2100);
-      }, 2100);
+          }, 2000);
+          setTimeout(() => {
+            pics[4].style.display = "none";
+            pics[0].style.display = "block";
+          }, 2500);
+      }, 2500);
   //for (let step = 0; step < 100; step++) {
 };
 
