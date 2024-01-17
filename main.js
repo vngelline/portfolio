@@ -38,3 +38,5 @@ let logo1 = document.getElementById("logo-1");
 
 logo1.onload = logoParty();
 
+
+
