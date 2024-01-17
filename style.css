@@ -54,3 +54,10 @@ header a {
   color: var(--Text, #f7ebec);
   transition: all 0.2s ease-in-out;
 }
+
+#logo-2, #logo-3, #logo-4, #logo-5 {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    display: none;
+}
