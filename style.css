@@ -41,25 +41,69 @@ p {
   line-height: 27px; /* 135% */
 }
 
-.button {
+.button-nav,
+.button-primary {
+  font-size: 1rem;
+  border: none;
+  outline: none;
   display: flex;
   padding: 0.625rem 1.25rem;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 8px;
   background: var(--Accent, #488e99);
   color: var(--Text, #f7ebec);
+  justify-content: center;
 }
 
-.button:hover {
+.button-primary,
+.button-secondary {
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid #488e99;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-nav:hover,
+.button-primary:hover {
+  border-color: #bad9de;
   background-color: #bad9de;
   color: #1f3147;
   transform: scale(1.1);
 }
 
-.button:active {
+.button-nav:active,
+.button-primary:active {
+  border-color: #bad9de;
   background-color: #bad9de;
   color: #1f3147;
   transform: scale(0.8);
+}
+
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  border: 2px solid #488e99;
+  background-color: #1f3147;
+  color: #f7ebec;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: #488e99;
+  color: #1f3147;
+}
+
+.button-secondary:active {
+  border-color: #bad9de;
+  background-color: #bad9de;
+  color: #1f3147;
 }
 
 .title {
@@ -84,6 +128,7 @@ header {
   background: var(--Background, #1f3147);
   position: sticky;
   top: 0;
+  z-index: 5;
 }
 
 nav ul {
@@ -245,8 +290,67 @@ header a:active {
 }
 
 #blob {
-    position: absolute;
-    top: 765px;
-    left: 370px;
-    z-index: -1;
+  position: absolute;
+  top: 765px;
+  left: 370px;
+  z-index: -1;
+}
+
+/*---Projects Section---*/
+
+#projects {
+  margin: 0 12.8125rem 6.25rem 12.8125rem;
+  gap: 70px;
+  display: flex;
+  align-items: center;
+}
+
+#projects .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#projects .project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+#projects .title {
+  color: #f7ebec;
+}
+
+#projects .project-stack {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.project-stack p {
+  font-weight: 700;
+}
+
+#projects .links {
+  display: flex;
+align-items: flex-start;
+gap: 1rem;
+}
+
+#projects .image-container {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+
+/* #projects img {
+  max-width: 100%;
+} */
+
+.project-video {
+  max-width: 100%;
+  border-radius: 2rem;
+  border: 2px solid #f7ebec;
 }

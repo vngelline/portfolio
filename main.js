@@ -40,3 +40,12 @@ logo1.onload = logoParty();
 
 
 
+const videoPlayer = document.querySelector('.project-video');
+
+videoPlayer.addEventListener('mouseover', () => {
+    videoPlayer.play();
+});
+videoPlayer.addEventListener('mouseleave', () => {
+  videoPlayer.currentTime = 0;
+  videoPlayer.pause();
+});
