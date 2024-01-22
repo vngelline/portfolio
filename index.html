@@ -28,13 +28,13 @@
         </div>
         <nav>
             <ul>
-                <a href="#about-me">
+                <a href="#about-me" target="_self">
                     <li>About me</li>
                 </a>
-                <a href="#projects">
+                <a href="#projects" target="_self">
                     <li>Projects</li>
                 </a>
-                <a class="button-nav" href="#contact">
+                <a class="button-nav" href="#contact" target="_self">
                     <li>Contact</li>
                 </a>
             </ul>
@@ -81,31 +81,88 @@
                     <p>My main stack currently is Figma and JavaSript.</p>
                 </div>
             </div>
-            <img id="blob" src="./Assets/blob.svg" alt="Blob">
+            <img class="rotating" id="blob" src="./Assets/blob.svg" alt="Blob">
         </div>
         <div id="projects">
+            <div class="project">
+                <div class="text-box">
+                    <div class="project-info">
+                        <p class="title">POTTERY CLUB</p>
+                        <p>Pottery Club is a website for the neighbourhood pottery studio where you can sign up for a
+                            lesson for free. </p>
+                    </div>
+                    <div class="project-stack">
+                        <p>Vanilla HTML</p>
+                        <p>Vanilla CSS</p>
+                    </div>
+                    <div class="links">
+                        <button class="button-primary"
+                            onclick="window.open('https://github.com/vngelline/pottery-club', '_blank')"
+                            type="button">Code
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                        <button class="button-secondary"
+                            onclick="window.open('https://vngelline.github.io/pottery-club/', '_blank')"
+                            type="button">Live
+                            demo
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <!-- <img src="./Assets/pottery-club.png" alt=""> -->
+                    <video class="project-video" muted src="./Assets/Video_Pottery-Club.mov"></video>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <!-- <img src="./Assets/pottery-club.png" alt=""> -->
+                    <video class="project-video" muted src="./Assets/Video_Pati-Dreads.mov"></video>
+                </div>
+                <div class="text-box">
+                    <div class="project-info">
+                        <p class="title">PATI DREADS</p>
+                        <p>Website for a dreadlock artist Pati located in Lisbon, Portugal.</p>
+                    </div>
+                    <div class="project-stack">
+                        <p>Vanilla HTML</p>
+                        <p>Vanilla CSS</p>
+                    </div>
+                    <div class="links">
+                        <button class="button-primary"
+                            onclick="window.open('https://github.com/vngelline/pottery-club', '_blank')"
+                            type="button">Code
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                        <button class="button-secondary"
+                            onclick="window.open('https://vngelline.github.io/pottery-club/', '_blank')"
+                            type="button">Live
+                            demo
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
             <div class="text-box">
-                <div class="project-info">
-                    <p class="title">POTTERY CLUB</p>
-                    <p>Pottery Club is a website for the neighbourhood pottery studio where you can sign up for a
-                        lesson for free. </p>
-                </div>
-                <div class="project-stack">
-                    <p>Vanilla HTML</p>
-                    <p>Vanilla CSS</p>
-                </div>
-                <div class="links">
-                    <button class="button-primary" onclick="window.open('https://github.com/vngelline/pottery-club', '_blank')" type="button">Code
-                        <i class="fa-brands fa-github"></i>
+                <p class="title">CONTACT
+                </p>
+                <h2>I'm open to both freelance projects and job offers!</h2>
+
+                <div class="links"><button class="button-primary"
+                        onclick="window.open('https://github.com/vngelline/pottery-club', '_blank')" type="button">Email
+                        <i class="fa-solid fa-envelope"></i>
                     </button>
-                    <button class="button-secondary" onclick="window.open('https://vngelline.github.io/pottery-club/', '_blank')" type="button">Live demo
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <button class="button-primary"
+                        onclick="window.open('https://github.com/vngelline/pottery-club', '_blank')"
+                        type="button">LinkedIn
+                        <i class="fa-brands fa-linkedin"></i>
                     </button>
                 </div>
             </div>
             <div class="image-container">
-                <!-- <img src="./Assets/pottery-club.png" alt=""> -->
-                <video class="project-video" muted src="./Assets/Screen Recording 2024-01-21 at 10.33.31 PM.mov"></video>
+                <img class="rotating" src="./Assets/big-flower.svg" alt="">
             </div>
         </div>
     </main>
